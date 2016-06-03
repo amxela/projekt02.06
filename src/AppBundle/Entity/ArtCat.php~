@@ -1,0 +1,40 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ArtCat
+ *
+ * @ORM\Table(name="art_cat")
+ * @ORM\Entity
+ */
+class ArtCat
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="art_cat_id", type="bigint")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $artCatId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="art_id", type="bigint", nullable=false)
+     */
+    private $artId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="cat_id", type="bigint", nullable=false)
+     */
+    private $catId;
+
+
+}
+

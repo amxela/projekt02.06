@@ -1,0 +1,8 @@
+{% block body %}
+    <ul id="navigation">
+	{%for elem in navigation%}
+			<li><a href="">{{elem}}</a></li>
+	{%endfor%}
+	</ul>
+	<p><a href="http://localhost:8000/site.com/category_name">Перейти на страницу категорий</a></p>
+{% endblock %}

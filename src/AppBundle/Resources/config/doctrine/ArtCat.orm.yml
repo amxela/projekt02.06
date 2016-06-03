@@ -1,0 +1,27 @@
+AppBundle\Entity\ArtCat:
+    type: entity
+    table: art_cat
+    id:
+        artCatId:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: art_cat_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        artId:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+            column: art_id
+        catId:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+            column: cat_id
+    lifecycleCallbacks: {  }

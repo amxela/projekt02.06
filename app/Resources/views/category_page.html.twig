@@ -1,0 +1,23 @@
+{% block body %}
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<table>
+<tr>
+<td>
+	<ul id="navigation">
+		{%for elem in navigation%}
+				<li><a href="/site.com/category_name/{{elem}}" id="{{elem}}">{{elem}}</a></li>
+		{%endfor%}
+	</ul>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+
+<script type="text/javascript">
+		$("a").click(function(event){
+		});
+</script>
+{% endblock %}
